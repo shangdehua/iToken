@@ -16,3 +16,4 @@
 **/bin/
 **/.mvn/
 .gitignore
+/www/
