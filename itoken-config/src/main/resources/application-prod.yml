@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: itoken-config
+  boot:
+    admin:
+      client:
+        url: http://192.168.0.13:8084
+  cloud:
+    config:
+      label: main
+      server:
+        git:
+          uri: https://github.com/shangdehua/spring-cloud-config
+          search-paths: itoken
+          username:
+          password:
+  zipkin:
+    base-url: http://192.168.0.13:9411
+
+server:
+  port: 8888
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.0.13:8761/eureka/
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info
