@@ -139,7 +139,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
-                <version>3.1.1</version>
             </plugin>
         </plugins>
 
@@ -205,7 +204,7 @@
         </resources>
     </build>
 
-    <!-- 使用分发管理将本项目打成jar包，直接上传到指定服务器  mvn deploy-->
+    <!-- (部署服务器的节点)使用分发管理将本项目打成jar包，直接上传到指定服务器  mvn deploy-->
     <distributionManagement>
         <!--正式版本-->
         <repository>
