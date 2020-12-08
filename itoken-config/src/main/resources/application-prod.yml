@@ -10,8 +10,8 @@ spring:
       label: main
       server:
         git:
-          uri: https://github.com/shangdehua/spring-cloud-config
-          search-paths: itoken
+          uri: https://github.com/shangdehua/iToken
+          search-paths: respo
           username:
           password:
   zipkin:
