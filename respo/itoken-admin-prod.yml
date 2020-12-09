@@ -1,24 +1,11 @@
 spring:
   application:
-    name: itoken-config
-  boot:
-    admin:
-      client:
-        url: http://192.168.159.138:8084
-  cloud:
-    config:
-      label: main
-      server:
-        git:
-          uri: https://github.com/shangdehua/iToken
-          search-paths: respo
-          username:
-          password:
+    name: itoken-admin
   zipkin:
     base-url: http://192.168.159.138:9411
 
 server:
-  port: 8888
+  port: 8084
 
 eureka:
   client:
