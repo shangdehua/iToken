@@ -4,7 +4,7 @@ spring:
   boot:
     admin:
       client:
-        url: http://localhost:8084
+        url: http://192.168.159.138:8084
   cloud:
     config:
       label: main
@@ -15,19 +15,15 @@ spring:
           username:
           password:
   zipkin:
-    base-url: http://localhost:9411
+    base-url: http://192.168.159.138:9411
 
-#   配置服务器的默认端口为 8888，如果修改了默认端口，
-#则客户端项目就不能在 application.yml 或 application.properties 中配置 spring.cloud.config.uri，
-#必须在 bootstrap.yml 或是 bootstrap.properties 中配置，
-#原因是 bootstrap 开头的配置文件会被优先加载和配置，切记。
 server:
   port: 8888
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://192.168.159.138:8761/eureka/
 
 management:
   endpoint:
